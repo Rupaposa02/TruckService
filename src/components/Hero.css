@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap');
+
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 40px 0 60px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.hero-content {
+  /* flex: 0 0 48%; 
+  max-width: 580px;
+  z-index: 2;
+  padding-bottom: 20px; */
+   position: absolute;
+    top: 250px;
+  left: 150px;
+  width: 540px;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+.hero h1 {
+  margin: 0 0 18px 0;
+  font-size: 62px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #2b2b2b;
+  letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+  display: inline-block;
+  white-space: nowrap; 
+}
+
+.hero p {
+  max-width: 490px;
+  margin: 0 0 28px 0;
+  color: #737373;
+  font-size: 15px;
+  line-height: 1.45;
+  height: 44px;
+  font-weight: 400;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 196px;
+  height: 52px;
+  border-radius: 8px;
+  background: #465cff;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.hero-button:hover {
+  background: #344ceb;
+}
+
+.hero-image {
+  flex: 1 1 52%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+
+@media (max-width: 1150px) {
+  .hero {
+    padding: 20px 24px 0 24px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .hero-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .hero h1 span {
+    white-space: normal;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Services section — width: 1440; height: 851; background: #FFFFFF */
+.services {
+  position: relative;
+  width: 1440px;
+  max-width: 1440px;
+  height: 851px;
+  margin: 0 auto;
+  background: #ffffff;
+  opacity: 1;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Heading: width: 648px; height: 48px; top: 29px; left: 396px */
+.services__title {
+  position: absolute;
+  top: 29px;
+  left: 396px;
+  width: 648px;
+  height: 48px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #222222;
+  white-space: nowrap;
+}
+
+/* Sub-paragraph: width: 540px; height: 44px; top: 95px; left: 450px */
+.services__text {
+  position: absolute;
+  top: 95px;
+  left: 450px;
+  width: 540px;
+  height: 44px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #666666;
+}
+
+/* ---------- Cards (Figma Coordinates & Dimensions) ---------- */
+.services__card {
+  position: absolute;
+  width: 505px;
+  height: 287px;
+  border-radius: 9px;
+  background-color: #f7f9fc;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* First Left Box: top: 187px, left: 197px */
+.services__card--parts {
+  top: 187px;
+  left: 197px;
+}
+
+/* First Right Box: top: 187px, left: 738px */
+.services__card--wash {
+  top: 187px;
+  left: 738px;
+}
+
+/* Second Left Box: top: 506px, left: 197px */
+.services__card--accessories {
+  top: 506px;
+  left: 197px;
+}
+
+/* Second Right Box: top: 506px, left: 738px */
+.services__card--oil {
+  top: 506px;
+  left: 738px;
+}
+
+/* ---------- Card Typography ---------- */
+.services__card-title {
+  position: absolute;
+  top: 30px;
+  left: 28px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+  color: #222222;
+  z-index: 2;
+}
+
+/* 280px width forces the clean 2-line break seen in Figma */
+.services__card--parts .services__card-title,
+.services__card--wash .services__card-title,
+.services__card--oil .services__card-title {
+  width: 280px;
+}
+
+.services__card--accessories .services__card-title {
+  width: 240px;
+}
+
+/* Card Body Text */
+.services__card-text {
+  position: absolute;
+  top: 96px;
+  left: 28px;
+  width: 215px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.48;
+  color: #666666;
+  z-index: 2;
+}
+
+/* ---------- Direct Image Sizing & Placement ---------- */
+.services__card-image {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  object-fit: contain;
+  max-width: none;
+  max-height: none;
+}
+
+/* Card 1: Wheel, battery, brake pads */
+.services__card--parts .services__card-image {
+  width: 250px;
+  height: 235px;
+  right: 6px;
+  bottom: 6px;
+  mix-blend-mode: multiply;
+}
+
+/* Card 2: Blue car with splash */
+.services__card--wash .services__card-image {
+  width: 295px;
+  height: 175px;
+  right: -5px;
+  bottom: 25px;
+}
+
+/* Card 3: Large Subwoofer & Amplifier stretching across bottom right */
+.services__card--accessories .services__card-image {
+  width: 320px;
+  height: 250px;
+  right: 0px;
+  bottom: 0px;
+  mix-blend-mode: multiply;
+}
+
+/* Card 4: Oil canisters */
+.services__card--oil .services__card-image {
+  width: 210px;
+  height: 205px;
+  right: 18px;
+  bottom: 8px;
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", Arial, sans-serif;
+  background: #ffffff;
+  color: #303030;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    min-width: 320px;
+  }
+}
